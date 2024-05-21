@@ -3,6 +3,8 @@ The Virtual AI Assistant project is a Python-based application that utilizes nat
 
 
 Features
+
+
 Natural Language Understanding: Utilizes Transformers-based models to comprehend and generate human-like responses.
 Predefined Responses: Includes a set of predefined responses for common queries and commands.
 Text-to-Speech (TTS) Capability: Converts text responses to speech using the gTTS library for enhanced user interaction.
@@ -17,13 +19,36 @@ Hugging Face Transformers: Library for state-of-the-art natural language process
 Google Translate API: Used for language detection and translation capabilities.
 gTTS (Google Text-to-Speech): Converts text responses into spoken audio.
 Tkinter: Python's de-facto standard GUI library for creating graphical user interfaces.
-Getting Started
-To get started with the Virtual AI Assistant:
 
+
+Getting Started
+To get started with the ChatBot:
 Clone the repository to your local machine.
-Install the necessary dependencies listed in requirements.txt.
+Install the necessary dependencies listed in requirements.txt by using: pip install -r requirements.txt command.
+Unzip the sequences archive. 
+Download all files from https://huggingface.co/facebook/blenderbot-400M-distill. The project directory should look like bellow: 
+├── Project Folder Name
+│   ├── models
+│   │   └── HuggingFaceBotModel400M
+│   │       ├── config.json
+│   │       ├── pytorch_model.bin
+│   │       ├── added_tokens.json
+│   │       ├── flax_model.msgpack
+│   │       ├── generation_config.json
+│   │       ├── tokenizer_config.json
+│   │       ├── tokenizer.json
+│   │       ├── vocab.txt
+│   │       ├── special_tokens_map.json
+│   │       └── tf_model.h5
+│   │
+│   ├── chatbot.py
+│   ├── main.py
+|   |──  other files..
+
+
 Run main.py to launch the application.
-Start interacting with the AI Assistant through the GUI or command line interface.
+Start interacting with Jerry through the GUI
+
 Contributions
 Contributions to the Virtual AI Assistant project are welcome! Feel free to fork the repository, make improvements, and submit pull requests for review.
 
